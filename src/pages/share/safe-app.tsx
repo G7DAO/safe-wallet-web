@@ -11,7 +11,7 @@ const ShareSafeApp = () => {
   return (
     <>
       <Head>
-        <title>{`Safe{Wallet} – Safe Apps`}</title>
+        <title>{`Game7 Safe – Safe Apps`}</title>
       </Head>
 
       <main>

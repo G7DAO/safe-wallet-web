@@ -2,7 +2,7 @@ import type { Dispatch, SetStateAction } from 'react'
 import { type ReactElement } from 'react'
 import { useRouter } from 'next/router'
 import type { Url } from 'next/dist/shared/lib/router/router'
-import { IconButton, Paper } from '@mui/material'
+import { IconButton, Paper, useTheme } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import classnames from 'classnames'
 import css from './styles.module.css'
@@ -41,6 +41,8 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
   const showSafeToken = useSafeTokenEnabled()
   const router = useRouter()
   const enableWc = useHasFeature(FEATURES.NATIVE_WALLETCONNECT)
+  const theme = useTheme();
+  const fillColor = theme.palette.mode === 'dark' ? 'white' : '#FE2C2E';
 
   // If on the home page, the logo should link to the Accounts or Welcome page, otherwise to the home page
   const logoHref = getLogoLink(router)
@@ -71,13 +73,13 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
       <div className={classnames(css.element, css.logoMobile)}>
         <Link href={logoHref} passHref>
-          <SafeLogoMobile alt="Safe logo" />
+          <SafeLogoMobile alt="Safe logo" fill={fillColor} />
         </Link>
       </div>
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
-          <SafeLogo alt="Safe logo" />
+          <SafeLogo alt="Safe logo" fill={fillColor} />
         </Link>
       </div>
 
