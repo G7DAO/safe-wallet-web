@@ -43,7 +43,7 @@ export const FallbackHandler = (): ReactElement | null => {
 
   const warning = !hasFallbackHandler ? (
     <>
-      The {'Game7 Safe'} may not work correctly as no fallback handler is currently set.
+      The Game7 Safe may not work correctly as no fallback handler is currently set.
       {txBuilder && (
         <>
           {' '}

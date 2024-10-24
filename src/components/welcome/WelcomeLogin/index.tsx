@@ -16,8 +16,8 @@ const WelcomeLogin = () => {
   const wallet = useWallet()
   const { isLoaded, hasSafes } = useHasSafes()
   const [shouldRedirect, setShouldRedirect] = useState(false)
-  const theme = useTheme();
-  const fillColor = theme.palette.mode === 'dark' ? 'white' : '#FE2C2E';
+  const theme = useTheme()
+  const fillColor = theme.palette.mode === 'dark' ? 'white' : '#FE2C2E'
 
   const redirect = useCallback(() => {
     if (wallet) {
@@ -42,7 +42,12 @@ const WelcomeLogin = () => {
   return (
     <Paper className={css.loginCard} data-testid="welcome-login">
       <Box className={css.loginContent}>
-        <SvgIcon component={SafeLogo} inheritViewBox sx={{ height: '24px', width: '80px', ml: '-8px' }} fill={fillColor} />
+        <SvgIcon
+          component={SafeLogo}
+          inheritViewBox
+          sx={{ height: '24px', width: '80px', ml: '-8px' }}
+          fill={fillColor}
+        />
 
         <Typography variant="h6" mt={6} fontWeight={700}>
           Get started

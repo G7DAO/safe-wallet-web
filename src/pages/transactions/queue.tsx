@@ -15,7 +15,7 @@ const Queue: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safe – Transaction queue'}</title>
+        <title>Game7 Safe – Transaction queue</title>
       </Head>
 
       <BatchExecuteHoverProvider>

@@ -33,7 +33,7 @@ const SwapPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safe – Swap'}</title>
+        <title>Game7 Safe – Swap</title>
       </Head>
 
       <main style={{ height: 'calc(100vh - 52px)' }}>

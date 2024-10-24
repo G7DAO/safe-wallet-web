@@ -24,7 +24,7 @@ const Balances: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safe – Assets'}</title>
+        <title>Game7 Safe – Assets</title>
       </Head>
 
       <AssetsHeader>

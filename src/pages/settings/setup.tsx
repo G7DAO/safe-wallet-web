@@ -19,7 +19,7 @@ const Setup: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safengs – Setup'}</title>
+        <title>Game7 Safengs – Setup</title>
       </Head>
 
       <SettingsHeader />

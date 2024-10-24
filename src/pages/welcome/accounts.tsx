@@ -6,7 +6,7 @@ const Accounts: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safe – My accounts'}</title>
+        <title>Game7 Safe – My accounts</title>
       </Head>
 
       <MyAccounts />

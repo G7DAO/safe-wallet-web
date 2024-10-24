@@ -41,8 +41,8 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
   const showSafeToken = useSafeTokenEnabled()
   const router = useRouter()
   const enableWc = useHasFeature(FEATURES.NATIVE_WALLETCONNECT)
-  const theme = useTheme();
-  const fillColor = theme.palette.mode === 'dark' ? 'white' : '#FE2C2E';
+  const theme = useTheme()
+  const fillColor = theme.palette.mode === 'dark' ? 'white' : '#FE2C2E'
 
   // If on the home page, the logo should link to the Accounts or Welcome page, otherwise to the home page
   const logoHref = getLogoLink(router)

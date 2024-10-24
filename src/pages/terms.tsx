@@ -30,7 +30,7 @@ const Terms: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safe – Terms'}</title>
+        <title>Game7 Safe – Terms</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeTerms components={overrideComponents} />}</main>

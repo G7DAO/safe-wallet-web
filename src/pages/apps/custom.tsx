@@ -29,7 +29,7 @@ const CustomSafeApps: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Game7 Safe – Custom Safe Apps'}</title>
+        <title>Game7 Safe – Custom Safe Apps</title>
       </Head>
 
       <SafeAppsSDKLink />
