@@ -290,6 +290,22 @@ index 3ab81d2..a37f7ba 100644
          "17000": "canonical",
          "17069": "canonical",
          "18233": "canonical",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json
+index adcf10f..bbc0dd1 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_migration.json
+@@ -21,9 +21,11 @@
+         "995": "canonical",
+         "1101": "canonical",
+         "1337": "canonical",
++        "2187": "canonical",
+         "5000": "canonical",
+         "8453": "canonical",
+         "10081": "canonical",
++        "13746": "canonical",
+         "42161": "canonical",
+         "42220": "canonical",
+         "43114": "canonical",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json
 index fd11c33..655a457 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_proxy_factory.json
@@ -310,6 +326,38 @@ index fd11c33..655a457 100644
          "17000": "canonical",
          "17069": "canonical",
          "18233": "canonical",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json
+index bd0078a..172c5c7 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_migration.json
+@@ -21,9 +21,11 @@
+         "995": "canonical",
+         "1101": "canonical",
+         "1337": "canonical",
++        "2187": "canonical",
+         "5000": "canonical",
+         "8453": "canonical",
+         "10081": "canonical",
++        "13746": "canonical",
+         "42161": "canonical",
+         "42220": "canonical",
+         "43114": "canonical",
+diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
+index 5deb8d6..54fc779 100644
+--- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
++++ b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/safe_to_l2_setup.json
+@@ -21,9 +21,11 @@
+         "995": "canonical",
+         "1101": "canonical",
+         "1337": "canonical",
++        "2187": "canonical",
+         "5000": "canonical",
+         "8453": "canonical",
+         "10081": "canonical",
++        "13746": "canonical",
+         "42161": "canonical",
+         "42220": "canonical",
+         "43114": "canonical",
 diff --git a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json b/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json
 index 7e8a185..0562ece 100644
 --- a/node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1/sign_message_lib.json
