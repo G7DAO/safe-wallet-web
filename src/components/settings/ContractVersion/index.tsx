@@ -51,8 +51,8 @@ export const ContractVersion = () => {
           <Skeleton width="60px" />
         )}
       </Typography>
-
-      {safeLoaded && safe.version && showUpdateDialog && (
+      {/* For now Update function works only for safes < 1.3.0 */}
+      {safeLoaded && !['1.3.0', '1.3.0+L2'].includes(safe.version ?? '') && showUpdateDialog && (
         <Alert
           sx={{ mt: 2, borderRadius: '2px', borderColor: '#B0FFC9' }}
           icon={<SvgIcon component={InfoIcon} inheritViewBox color="secondary" />}
