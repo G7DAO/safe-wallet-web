@@ -45,8 +45,7 @@ const WelcomeLogin = () => {
         <SvgIcon
           component={SafeLogo}
           inheritViewBox
-          sx={{ height: '40px', width: '200px', ml: '-8px' }}
-          fill={fillColor}
+          sx={{ height: '40px', width: '200px', ml: '-8px', color: fillColor }}
         />
         <Typography variant="h6" mt={6} fontWeight={700}>
           Get started
