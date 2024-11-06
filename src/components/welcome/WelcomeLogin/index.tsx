@@ -1,5 +1,5 @@
 import { AppRoutes } from '@/config/routes'
-import { Paper, SvgIcon, Typography, Divider, Box, Button, Link } from '@mui/material'
+import { Paper, SvgIcon, Typography, Divider, Box, Button, Link, useTheme } from '@mui/material'
 import SafeLogo from '@/public/images/logo-text.svg'
 import css from './styles.module.css'
 import { useRouter } from 'next/router'
@@ -16,6 +16,8 @@ const WelcomeLogin = () => {
   const wallet = useWallet()
   const { isLoaded, hasSafes } = useHasSafes()
   const [shouldRedirect, setShouldRedirect] = useState(false)
+  const theme = useTheme()
+  const fillColor = theme.palette.mode === 'dark' ? 'white' : '#FE2C2E'
 
   const redirect = useCallback(() => {
     if (wallet) {
@@ -40,8 +42,12 @@ const WelcomeLogin = () => {
   return (
     <Paper className={css.loginCard} data-testid="welcome-login">
       <Box className={css.loginContent}>
-        <SvgIcon component={SafeLogo} inheritViewBox sx={{ height: '60px', width: '300px', ml: '-8px' }} />
-
+        <SvgIcon
+          component={SafeLogo}
+          inheritViewBox
+          sx={{ height: '40px', width: '200px', ml: '-8px' }}
+          fill={fillColor}
+        />
         <Typography variant="h6" mt={6} fontWeight={700}>
           Get started
         </Typography>

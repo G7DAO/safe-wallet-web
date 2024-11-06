@@ -41,7 +41,7 @@ const WcSampleDapps = ({ onUnload }: { onUnload: () => void }) => {
 
 const WcNoSessions = () => {
   const { safeLoaded } = useSafeInfo()
-  const [showDapps = true, setShowDapps] = useLocalStorage<boolean>(LS_KEY)
+  const [showDapps = false, setShowDapps] = useLocalStorage<boolean>(LS_KEY)
 
   const onUnload = useCallback(() => {
     setShowDapps(false)
