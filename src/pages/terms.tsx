@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { IS_OFFICIAL_HOST } from '@/config/constants'
 import SafeTerms from '@/markdown/terms/terms.md'
+import ExternalTerms from '@/markdown/terms/termsExternal.md'
 import type { LinkProps as NextLinkProps } from 'next/link'
 import NextLink from 'next/link'
 import type { LinkProps as MUILinkProps } from '@mui/material/Link'
@@ -33,7 +34,13 @@ const Terms: NextPage = () => {
         <title>Game7 Safe – Terms</title>
       </Head>
 
-      <main>{IS_OFFICIAL_HOST && <SafeTerms components={overrideComponents} />}</main>
+      <main>
+        {IS_OFFICIAL_HOST ? (
+          <SafeTerms components={overrideComponents} />
+        ) : (
+          <ExternalTerms components={overrideComponents} />
+        )}{' '}
+      </main>
     </>
   )
 }
