@@ -1,11 +1,11 @@
 ---
-version: 1.0
-last_update_date: October 14, 2024
+version: 1.1
+last_update_date: November, 2024
 ---
 
 # **Terms and Conditions**
 
-Last updated: October 14, 2024\.
+Last updated: November, 2024\.
 
 ### **1\. What is the scope of the Terms?**
 
@@ -39,7 +39,7 @@ Owners need to connect a signing wallet with a Safe Account. Safe Accounts are c
 
 2. “Safe App”
 
-You may access Safe Accounts using the Safe{Wallet} web app, mobile app for iOS and android, or the browser extension (each a “Safe App”). The Safe App may be used to manage your personal digital assets on Ethereum and other common EVM chains when you connect a Safe Account with third-party services (as defined below). The Safe App provides certain features that may be amended from time to time.
+You may access Safe Accounts using the Game7 Safe web app, mobile app for iOS and android, or the browser extension (each a “Safe App”). The Safe App may be used to manage your personal digital assets on Ethereum and other common EVM chains when you connect a Safe Account with third-party services (as defined below). The Safe App provides certain features that may be amended from time to time.
 
 3. “Third-Party Safe Apps”
 
@@ -213,7 +213,7 @@ All covenants, agreements, representations and warranties made in this Agreement
 
 ### **27\. Data Protection**
 
-We inform you about our processing of personal data, including the disclosure to third parties and your rights as an affected party, in the [**Privacy Policy**](https://app.safe.global/privacy).
+We inform you about our processing of personal data, including the disclosure to third parties and your rights as an affected party, in the **Privacy Policy**.
 
 ### **28\. Which laws apply to the Agreement?**
 
