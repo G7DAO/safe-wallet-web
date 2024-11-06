@@ -13,7 +13,7 @@ import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
 import { openCookieBanner } from '@/store/popupSlice'
 import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
 import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
-import { Link, ListItem, SvgIcon } from '@mui/material'
+import { Box, Link, ListItem, SvgIcon, useTheme } from '@mui/material'
 import DebugToggle from '../DebugToggle'
 import { HELP_CENTER_URL, IS_OFFICIAL_HOST, IS_PRODUCTION, NEW_SUGGESTION_FORM } from '@/config/constants'
 import Track from '@/components/common/Track'
@@ -27,6 +27,7 @@ const SidebarFooter = (): ReactElement => {
   const dispatch = useAppDispatch()
   const chain = useCurrentChain()
   const hasBeamerConsent = useAppSelector((state) => hasConsentFor(state, CookieAndTermType.UPDATES))
+  const theme = useTheme()
 
   useEffect(() => {
     // Initialise Beamer when consent was previously given
@@ -79,9 +80,25 @@ const SidebarFooter = (): ReactElement => {
       </Track>
       <ListItem disablePadding>
         <a target="_blank" rel="noopener noreferrer" href={NEW_SUGGESTION_FORM} style={{ width: '100%' }}>
-          <SidebarListItemButton style={{ backgroundColor: '#12FF80', color: 'black' }}>
-            <SidebarListItemIcon color="primary">
-              <SuggestionIcon />
+          <SidebarListItemButton
+            style={{
+              color: 'black',
+              backgroundColor:
+                theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.secondary.main,
+            }}
+          >
+            <SidebarListItemIcon>
+              <Box
+                sx={{
+                  '& svg': {
+                    '& path': () => ({
+                      fill: 'black !important',
+                    }),
+                  },
+                }}
+              >
+                <SuggestionIcon />
+              </Box>
             </SidebarListItemIcon>
             <SidebarListItemText bold>New Features Suggestion?</SidebarListItemText>
           </SidebarListItemButton>
