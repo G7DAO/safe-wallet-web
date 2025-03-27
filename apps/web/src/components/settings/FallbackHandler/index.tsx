@@ -5,12 +5,12 @@ import type { ReactElement } from 'react'
 
 import EthHashInfo from '@/components/common/EthHashInfo'
 import useSafeInfo from '@/hooks/useSafeInfo'
-import { BRAND_NAME, HelpCenterArticle } from '@/config/constants'
+import { HelpCenterArticle } from '@/config/constants'
 import ExternalLink from '@/components/common/ExternalLink'
-import { useTxBuilderApp } from '@/hooks/safe-apps/useTxBuilderApp'
 import { useCompatibilityFallbackHandlerDeployments } from '@/hooks/useCompatibilityFallbackHandlerDeployments'
 import { useIsOfficialFallbackHandler } from '@/hooks/useIsOfficialFallbackHandler'
 import { useIsTWAPFallbackHandler } from '@/features/swap/hooks/useIsTWAPFallbackHandler'
+import { useTxBuilderApp } from '@/hooks/safe-apps/useTxBuilderApp'
 
 const FALLBACK_HANDLER_VERSION = '>=1.1.1'
 
@@ -43,6 +43,7 @@ export const FallbackHandler = (): ReactElement | null => {
   const fallbackHandlerDeployments = useCompatibilityFallbackHandlerDeployments()
   const isOfficial = useIsOfficialFallbackHandler()
   const isTWAPFallbackHandler = useIsTWAPFallbackHandler()
+  const txBuilder = useTxBuilderApp()
 
   const supportsFallbackHandler = !!safe.version && semverSatisfies(safe.version, FALLBACK_HANDLER_VERSION)
 

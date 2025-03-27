@@ -119,3 +119,5 @@ export const MULTICHAIN_HELP_ARTICLE = `${HELP_CENTER_URL}/en/articles/222612-mu
 
 export const NEW_SUGGESTION_FORM =
   'https://docs.google.com/forms/d/e/1FAIpQLSfojsADYCiWq9AqbLqsUTzCDSpA8FMgdAQp0Pyl0BOeurlq9A/viewform'
+export const TERMS_LINK = process.env.NEXT_PUBLIC_TERMS_LINK || 'https://raw.githubusercontent.com/protofire/safe-legal/refs/heads/main/terms.md'
+export const COOKIE_LINK = process.env.NEXT_PUBLIC_COOKIE_LINK || 'https://raw.githubusercontent.com/protofire/safe-legal/refs/heads/main/cookie.md'

@@ -104,7 +104,7 @@ export const CookieAndTermBanner = ({
             >
               By browsing this page, you accept our{' '}
               <ExternalLink href={AppRoutes.terms}>Terms & Conditions</ExternalLink> (last updated{' '}
-              {metadata.last_update_date}) and the use of necessary cookies. By clicking &quot;Accept all&quot; you
+              {metadata.lastUpdated}) and the use of necessary cookies. By clicking &quot;Accept all&quot; you
               additionally agree to the use of cookies as listed below.{' '}
               <ExternalLink href={AppRoutes.cookie}>Cookie policy</ExternalLink>
             </Typography>

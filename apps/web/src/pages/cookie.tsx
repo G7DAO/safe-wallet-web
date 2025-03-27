@@ -5,6 +5,7 @@ import MUILink from '@mui/material/Link'
 import { AppRoutes } from '@/config/routes'
 import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import { BRAND_NAME } from '@/config/constants'
+import ExternalCookiePolicy from './cookieExternal'
 
 const SafeCookiePolicy = () => (
   <div>
@@ -599,7 +600,7 @@ const CookiePolicy: NextPage = () => {
         <title>Game7 Safe – Cookie policy</title>
       </Head>
 
-      <main>{IS_OFFICIAL_HOST ? <SafeCookiePolicy /> : <ExternalCookiePolicy />}</main>
+      <main>{isOfficialHost ? <SafeCookiePolicy /> : <ExternalCookiePolicy />}</main>
     </>
   )
 }

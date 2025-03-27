@@ -1,5 +1,6 @@
 import type { ReactElement, ReactNode } from 'react'
 import { SvgIcon, Typography } from '@mui/material'
+import MUILink from '@mui/material/Link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -8,8 +9,8 @@ import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
 // import AppstoreButton from '../AppStoreButton'
 import ExternalLink from '../ExternalLink'
-import MUILink from '@mui/material/Link'
-import { HELP_CENTER_URL, IS_OFFICIAL_HOST } from '@/config/constants'
+import { HELP_CENTER_URL } from '@/config/constants'
+import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import ProtofireLogo from '@/public/images/protofire.svg'
 import darkPalette from '@/components/theme/darkPalette'
 
@@ -48,7 +49,7 @@ const Footer = (): ReactElement | null => {
   return (
     <footer className={css.container}>
       <ul>
-        {IS_OFFICIAL_HOST ? (
+        {isOfficialHost ? (
           <>
             <li>
               <Typography variant="caption">&copy;2024–{new Date().getFullYear()} </Typography>
