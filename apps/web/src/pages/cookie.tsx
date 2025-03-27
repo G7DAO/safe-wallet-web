@@ -4,7 +4,6 @@ import Link from 'next/link'
 import MUILink from '@mui/material/Link'
 import { AppRoutes } from '@/config/routes'
 import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
-import { BRAND_NAME } from '@/config/constants'
 import ExternalCookiePolicy from './cookieExternal'
 
 const SafeCookiePolicy = () => (

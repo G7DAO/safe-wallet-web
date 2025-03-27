@@ -18,7 +18,7 @@ const useIndexingStatus = () => {
     () => {
       return getIndexingStatus(chainId)
     },
-    [chainId, count],
+    [chainId],
     false,
   )
 }
