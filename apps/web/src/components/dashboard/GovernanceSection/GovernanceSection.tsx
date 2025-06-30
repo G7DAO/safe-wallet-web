@@ -4,7 +4,7 @@ import { WidgetBody } from '@/components/dashboard/styled'
 import css from './styles.module.css'
 import { useBrowserPermissions } from '@/hooks/safe-apps/permissions'
 import { useRemoteSafeApps } from '@/hooks/safe-apps/useRemoteSafeApps'
-import { DISCORD_URL, SafeAppsTag } from '@/config/constants'
+import { HELP_CENTER_URL, SafeAppsTag } from '@/config/constants'
 import { useDarkMode } from '@/hooks/useDarkMode'
 import { OpenInNew } from '@mui/icons-material'
 import NetworkError from '@/public/images/common/network-error.svg'
@@ -50,15 +50,15 @@ const WidgetLoadErrorFallback = () => (
             color: 'text.primary',
           }}
         >
-          You can try to reload the page and in case the problem persists, please reach out to us via{' '}
+          In case if problem persists, please report it through our{' '}
           <Link
             target="_blank"
-            href={DISCORD_URL}
+            href={HELP_CENTER_URL}
             sx={{
               fontSize: 'medium',
             }}
           >
-            Discord
+            Form
             <OpenInNew fontSize="small" color="primary" className={css.loadErroricon} />
           </Link>
         </Typography>
