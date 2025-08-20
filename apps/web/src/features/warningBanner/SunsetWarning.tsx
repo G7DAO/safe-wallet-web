@@ -12,7 +12,8 @@ export const SunsetWarning = () => {
   return (
     <ErrorMessage level="warning" title="Game7 is migrating its on-chain operations to Arbitrum One">
       <Typography display="inline" mr={1}>
-        Dear users, Support for Game7 Mainnet will end soon. Please  bridge out your liquid tokens to Arbitrum One by September 10, 2025.
+        Dear users, Support for Game7 Mainnet will end soon. Please bridge out your liquid tokens to Arbitrum One by
+        September 10, 2025.
       </Typography>
       <Typography display="inline">
         For further details regarding the migration, please refer to this{' '}
